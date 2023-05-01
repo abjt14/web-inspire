@@ -51,7 +51,7 @@ export default function SideBar() {
         </svg>
       </button>
       <div className={clsx(
-        "bg-neutral-950 overflow-auto rounded-sm flex-col items-start justify-start border border-transparent h-0 fixed top-[calc(10.125rem)] left-0 w-[calc(100%-2px)] z-30 sm:border-neutral-700 sm:flex sm:relative sm:top-0 sm:left-0 sm:h-min sm:w-full sm:bg-transparent transition-all duration-500 will-change-auto",
+        "bg-neutral-950 overflow-auto rounded-sm flex-col items-start justify-start border-0 border-transparent h-0 fixed top-[calc(10.125rem)] left-0 w-[calc(100%-2px)] z-30 sm:border sm:border-neutral-700 sm:flex sm:relative sm:top-0 sm:left-0 sm:h-min sm:w-full sm:bg-transparent transition-all duration-500 will-change-auto",
         filterToggle && 'h-[calc(100%-10.125rem+1px)] border-neutral-700'
       )}>
         {
