@@ -8,12 +8,12 @@ export const metadata = {
   openGraph: {
     title: 'Web Inspirations',
     description: 'A curated list of websites with beautiful design and great UX.',
-    url: 'web-inspirations.vercel.app',
+    url: 'web-inspire.vercel.app',
     locale: 'en_IE',
     type: 'website',
     images: [
       {
-        url: 'web-inspirations.vercel.app/images/og-image.jpg',
+        url: 'web-inspire.vercel.app/images/og-image.jpg',
         alt: 'Web Inspirations',
         width: 1440,
         height: 820,
