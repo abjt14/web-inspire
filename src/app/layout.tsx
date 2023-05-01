@@ -13,7 +13,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'web-inspire.vercel.app/images/og-image.jpg',
+        url: '/images/og-image.jpg',
         alt: 'Web Inspirations',
         width: 1440,
         height: 820,
