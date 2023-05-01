@@ -11,13 +11,6 @@ export default function Card({ website, lazy }: { website: ProcessedWebsite, laz
       <div className="image-container overflow-hidden relative border-b border-neutral-700 group-hover:border-neutral-50 duration-150 transition-all will-change-auto">
         <picture>
           <source
-            srcSet={`${imageBaseURL}/@2x/${id}.jpg`}
-            type="image/jpeg"
-            media="(min-width: 420px)"
-            width="1440"
-            height="820"
-          />
-          <source
             srcSet={`${imageBaseURL}/@4x/${id}.jpg`}
             type="image/jpeg"
             media="(min-width: 640px)"
@@ -25,7 +18,7 @@ export default function Card({ website, lazy }: { website: ProcessedWebsite, laz
             height="1640"
           />
           <img
-            src={`${imageBaseURL}/@1x/${id}.jpg`}
+            src={`${imageBaseURL}/@2x/${id}.jpg`}
             alt={title}
             className="w-full h-auto object-cover text-neutral-50 text-xs"
             width="720"
