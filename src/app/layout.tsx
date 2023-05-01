@@ -3,25 +3,25 @@ import Header from '@/components/Header';
 import SideBar from '@/components/SideBar';
 
 export const metadata = {
-  title: 'Web Inspirations',
+  title: 'Web Inspire',
   description: 'A curated list of websites with beautiful design and great UX.',
   openGraph: {
-    title: 'Web Inspirations',
+    title: 'Web Inspire',
     description: 'A curated list of websites with beautiful design and great UX.',
-    url: 'web-inspire.vercel.app',
+    url: 'https://web-inspire.vercel.app/',
     locale: 'en_IE',
     type: 'website',
     images: [
       {
         url: '/images/og-image.jpg',
-        alt: 'Web Inspirations',
+        alt: 'Web Inspire',
         width: 1440,
         height: 820,
       },
     ],
   },
   twitter: {
-    title: 'Web Inspirations',
+    title: 'Web Inspire',
     description: 'A curated list of websites with beautiful design and great UX.',
   },
   robots: {
