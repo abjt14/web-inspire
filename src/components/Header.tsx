@@ -10,7 +10,7 @@ export default function _() {
         </section>
         <section>
           <nav className="text-neutral-50 text-base flex gap-4 sm:gap-8 sm:text-lg">
-            <a className="underline-offset-4 underline decoration-transparent hover:decoration-neutral-500 duration-150" href="https://github.com/abjt14/web-inspirations" target="_blank">GitHub</a>
+            <a className="underline-offset-4 underline decoration-transparent hover:decoration-neutral-500 duration-150" href="https://github.com/abjt14/web-inspire" target="_blank">GitHub</a>
           </nav>
         </section>
       </div>
