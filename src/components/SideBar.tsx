@@ -6,14 +6,9 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from "react";
 
 export default function SideBar() {
-  let defaultTags: string[] = [];
   const pathname = usePathname();
 
-  if (pathname.includes('search')) {
-    defaultTags = pathname.split('/').slice(2);
-  }
-
-  const [tags, setTags] = useState<string[]>(defaultTags);
+  const [tags, setTags] = useState<string[]>([]);
   const [filterToggle, setFilterToggle] = useState<boolean>(false);
   const router = useRouter();
 
@@ -32,6 +27,14 @@ export default function SideBar() {
       router.push('/');
     }
   }, [tags, router]);
+
+  useEffect(() => {
+    if (pathname.includes('search')) {
+      setTags(pathname.split('/').slice(2));
+    } else {
+      setTags([]);
+    }
+  }, [pathname]);
 
   function handleFilterToggle() {
     window.scrollTo(0, 0);
@@ -68,12 +71,12 @@ export default function SideBar() {
                             <input
                               type="checkbox"
                               className="w-5 h-5 relative appearance-none text-neutral-50 after:content-[''] after:rounded-sm after:cursor-pointer after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:z-10 after:h-full after:w-full after:border after:border-neutral-700 after:bg-transparent peer after:hover:border-neutral-50 after:duration-150 after:transition-all after:will-change-auto"
-                              defaultChecked={tags.includes(value.key)}
+                              checked={tags.includes(value.key)}
                               onChange={(e) => {
                                 e.target.checked ? handleAddTag(value.key) : handleRemoveTag(value.key);
                                 // handleFilterToggle();
                               }}
-                              />
+                            />
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 opacity-0 peer-checked:opacity-100 absolute top-1/2 left-[.125rem] -translate-y-1/2 pointer-events-none">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
