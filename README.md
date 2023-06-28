@@ -8,3 +8,4 @@ A curated list of good looking websites.
  - [Next](https://nextjs.org/)
  - [Tailwind](https://tailwindcss.com/)
  - [Playwright](https://playwright.dev/)
+ - [Vercel](https://vercel.com/)
